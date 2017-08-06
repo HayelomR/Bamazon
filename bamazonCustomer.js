@@ -75,26 +75,25 @@ var promptCustomer = function(res){
           type:"input",
           name:"quantity",
           message:"How many would you like to buy?",
-          // validate:function(value){
-          //   if(isNaN(value) == false){
-          //     return true;
-          //   } else {
-          //     return false;
-          //   }
-          // }
+          validate:function(value){
+            if(isNaN(value) == false){
+              return true;
+            } else {
+              return false;
+            }
+          }
 
         }).then(function(answer){
-        //var query = "Select stock_quantity, price, department_name FROM products WHERE ?";
-        if(res[id].stock_quantity - answer.quantity){
-         connection.query("UPDATE products SET stock_quantity= '" 
-          +(res[id].stock_quantity - answer.quantity) + "' WHERE item_id ='" + product 
-          +"'",function(err,res2){
-            console.log("you added " + answer.quantity + " " + res[id].product_name + " " + "to your cart.");
-            console.log("the total price on your cart is: " + "$" + answer.quantity * res[id].price);
-            ask()
-            //checkQuantity();
-          })
-       }
+          if(res[id].stock_quantity - answer.quantity){
+           connection.query("UPDATE products SET stock_quantity= '" 
+            +(res[id].stock_quantity - answer.quantity) + "' WHERE item_id ='" + product 
+            +"'",function(err,res2){
+              console.log("you added " + answer.quantity + " " + res[id].product_name + " " + "to your cart.");
+              console.log("the total price on your cart is: " + "$" + answer.quantity * res[id].price);
+              ask()
+              checkQuantity();
+            })
+         }
         // } else {
         //   console.log("Not a valid selection!");
         //   promptCustomer(res);
@@ -120,17 +119,21 @@ function ask (){
     if(answer.choice == "Yes"){
       showTable();
     } else {
-      console.log("\n please pay the above price to the cashier. Thankyou for shopping with us & have a great day\n"); 
+      console.log("\n please pay the above price to the cashier. Thankyou for shopping with us & have a great day.\n"); 
     }
   });
 }
 
-// function checkQuantity(answer){
-//  if (answer.stock_quantity > item_id[id].stock_quantity) {
-//   console.log("please choose the right amount.")
-// } else{
-//   showTable();
-// }
+// function checkQuantity(){
+//   var query = connection.query(
+//     "UPDATE products SET ", function(err, res) {
+//       for(var i = 0; i < res.length; i++){
+//       if (item_id.quantity > res[i].stock_quantity) {          
+//         console.log("Sorry, insufficient quantity.");
+//       } else{
+//         showTable();
+//       }
+//     });
 // }
 
 
