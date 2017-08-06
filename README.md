@@ -1,4 +1,7 @@
-Instructions
+This is  the youtbe link for the assignment.
+https://www.youtube.com/watch?v=2DEfJ4uGuzw&feature=youtu.be
+
+nstructions
 
 
 Challenge #1: Customer View (Minimum Requirement)
