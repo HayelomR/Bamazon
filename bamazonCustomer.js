@@ -20,31 +20,31 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
   connection.query("Select * From products", function(err,res){
   	//console.log(res);
-     updateProduct();
+     //updateProduct();
     showTable();
   });
 
 });
-function updateProduct() {
-  console.log("Updating all Rocky Road quantities...\n");
-  var query = connection.query(
-    "UPDATE products SET ? WHERE ?",
-    [
-      {
-        stock_quantity: 2
-      },
-      {
-        product_name: "Cd"
-      }
-    ],function(err, res) {
-      console.log(res.affectedRows + " products updated!\n");
-      // Call deleteProduct AFTER the UPDATE completes
-      showTable();
-    }
-  );
-  // logs the actual query being run
-  console.log(query.sql);
-}
+// function updateProduct() {
+//   console.log("Updating all Rocky Road quantities...\n");
+//   var query = connection.query(
+//     "UPDATE products SET ? WHERE ?",
+//     [
+//       {
+//         stock_quantity: 2
+//       },
+//       {
+//         product_name: "Cd"
+//       }
+//     ],function(err, res) {
+//       console.log(res.affectedRows + " products updated!\n");
+//       // Call deleteProduct AFTER the UPDATE completes
+//       showTable();
+//     }
+//   );
+//   // logs the actual query being run
+//   console.log(query.sql);
+// }
 // function to show the data avaliable on the screen.
 var showTable = function(){
   connection.query("SELECT*FROM products",function(err,res){

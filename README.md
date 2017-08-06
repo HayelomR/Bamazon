@@ -4,7 +4,7 @@
  This is  the youtbe link for the assignment.
 
                     
-https://www.youtube.com/watch?v=2DEfJ4uGuzw&feature=youtu.be
+https://youtu.be/5IXoVL1VAeg
 
 
                            		Brief use of this app
@@ -33,8 +33,8 @@ D,Add New Product.
                
 
 							Screen shot how the bamazonCustomerapp works
- <img width="818" alt="bamazon managerial activites" src="https://user-images.githubusercontent.com/24379110/29007598-e21edf3e-7ac3-11e7-963e-907872ab8ebb.png">
 
+ <img width="818" alt="bamazon managerial activites" src="https://user-images.githubusercontent.com/24379110/29007598-e21edf3e-7ac3-11e7-963e-907872ab8ebb.png">
 
 
 
