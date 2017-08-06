@@ -20,7 +20,7 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
   connection.query("Select * From products", function(err,res){
   	//console.log(res);
-    //updateProduct();
+    // updateProduct();
     showTable();
   });
 
@@ -91,7 +91,7 @@ var promptCustomer = function(res){
               console.log("you added " + answer.quantity + " " + res[id].product_name + " " + "to your cart.");
               console.log("the total price on your cart is: " + "$" + answer.quantity * res[id].price);
               ask()
-              checkQuantity();
+              //checkQuantity();
             })
          }
         // } else {
