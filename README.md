@@ -33,7 +33,7 @@ D,Add New Product.
                
 
 							Screen shot how the bamazonCustomerapp works
- 
+ <img width="818" alt="bamazon managerial activites" src="https://user-images.githubusercontent.com/24379110/29007598-e21edf3e-7ac3-11e7-963e-907872ab8ebb.png">
 
 
 
