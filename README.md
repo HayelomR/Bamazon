@@ -7,7 +7,7 @@
 https://www.youtube.com/watch?v=2DEfJ4uGuzw&feature=youtu.be
 
 
-                Brief use of this app
+                           		Brief use of this app
                 
 This app is called a bamazonCustomer app that helps buyers to shop online. 
 First, the app will display the available products in the form of a table. Then it will let the customer choose the product by using
@@ -15,13 +15,24 @@ the "ID" of the product. After calculating the price and check the customer is d
 
 the data are made using mysql and all the changes you made are added or subtracted to the mysql database.
 
-                   screen shot how the app works
+This app also allow the manager to make a change to the product. by using bamazon manager app the manager can do the following activites.
+
+A,view all available products for sale.
+B, View Low Inventory.
+C,Add to Inventory.
+D,Add New Product.
+
+
+
+
+
+                             Screen shot how the bamazonCustomerapp works
 
 <img width="1245" alt="bamazonscreen shot copy" src="https://user-images.githubusercontent.com/24379110/29001129-4c9f5de8-7a3d-11e7-83ff-9c67a6a02f2a.png">
 
                
 
-
+							Screen shot how the bamazonCustomerapp works
  
 
 
