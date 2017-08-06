@@ -92,7 +92,7 @@ var promptCustomer = function(res){
             console.log("you added " + answer.quantity + " " + res[id].product_name + " " + "to your cart.");
             console.log("the total price on your cart is: " + "$" + answer.quantity * res[id].price);
             ask()
-            checkQuantity();
+            //checkQuantity();
           })
        }
         // } else {
