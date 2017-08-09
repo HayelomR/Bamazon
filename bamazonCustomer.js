@@ -20,7 +20,7 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
   connection.query("Select * From products", function(err,res){
   	//console.log(res);
-     //updateProduct();
+     // updateProduct();
     showTable();
   });
 
@@ -31,7 +31,7 @@ connection.connect(function(err) {
 //     "UPDATE products SET ? WHERE ?",
 //     [
 //       {
-//         stock_quantity: 2
+//         stock_quantity: 5000
 //       },
 //       {
 //         product_name: "Cd"
@@ -82,6 +82,7 @@ var promptCustomer = function(res){
               return false;
             }
           }
+          //checkQuantity();
 
         }).then(function(answer){
           if(res[id].stock_quantity - answer.quantity){
@@ -125,15 +126,10 @@ function ask (){
 }
 
 // function checkQuantity(){
-//   var query = connection.query(
-//     "UPDATE products SET ", function(err, res) {
-//       for(var i = 0; i < res.length; i++){
-//       if (item_id.quantity > res[i].stock_quantity) {          
-//         console.log("Sorry, insufficient quantity.");
-//       } else{
-//         showTable();
-//       }
-//     });
-// }
+//     if (answer.choice == res[i].item_id && answer.quantity > res[i].stock_quantity) {         
+//             console.log("Sorry, insufficient quantity.");
+
+//     }
+//  }
 
 
