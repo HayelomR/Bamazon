@@ -45,7 +45,7 @@ connection.connect(function(err) {
 //   // logs the actual query being run
 //   console.log(query.sql);
 // }
-// function to show the data avaliable on the screen.
+// function to show the data avaliable on bamazon store.
 var showTable = function(){
   connection.query("SELECT*FROM products",function(err,res){
     for(var i = 0; i < res.length; i++){
